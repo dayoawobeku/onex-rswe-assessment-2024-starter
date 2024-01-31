@@ -1,0 +1,241 @@
+{
+  "main": {
+    "new": "New",
+    "car": {
+      "name": "Tesla Model S",
+      "vin": {
+        "label": "VIN",
+        "value": "JN1AZ0CPOBT009448"
+      },
+      "price": "$41,103",
+      "colourTitle": "Colour",
+      "colors": [
+        {
+          "color": "black",
+          "backgroundColor": "#030303",
+          "displayName": "Black"
+        },
+        {"color": "red", "backgroundColor": "#D43A55", "displayName": "Red"},
+        {"color": "blue", "backgroundColor": "#0036C3", "displayName": "Blue"},
+        {
+          "color": "white",
+          "backgroundColor": "#ffffff",
+          "displayName": "Silver"
+        }
+      ],
+      "button": {
+        "orderNow": "Order now"
+      },
+      "delivery": "Estimated within 16 Aug – 23 Aug",
+      "vision": "Tesla believes in accelerating the world's transition to sustainable energy with electric cars.",
+      "viewCollection": "View the Tesla collection"
+    },
+    "accordion": {
+      "items": [
+        {
+          "value": "item-1",
+          "trigger": "Description",
+          "content": "The 2021 Tesla Model 3 offers a seamless blend of cutting-edge technology, performance, and sustainability. This electric sedan is designed to redefine your driving experience, providing an exhilarating journey with zero-emissions. Explore the features that make the Model 3 a leader in the electric vehicle market:",
+          "features": [
+            {
+              "title": "Efficient Electric Drive",
+              "description": "Instant acceleration and a quiet ride."
+            },
+            {
+              "title": "Advanced Autopilot",
+              "description": "Adaptive cruise control and automatic lane-keeping."
+            },
+            {
+              "title": "Minimalist Interior",
+              "description": "A sleek and spacious driving environment."
+            },
+            {
+              "title": "Long Range",
+              "description": "Impressive mileage on a single charge."
+            }
+          ]
+        },
+        {
+          "value": "item-2",
+          "trigger": "Product Highlights",
+          "content": "Explore what sets the Model 3 apart:",
+          "features": [
+            {
+              "title": "Performance",
+              "description": "Rapid acceleration and powerful electric motors."
+            },
+            {
+              "title": "Innovative Technology",
+              "description": "Intuitive touchscreen, over-the-air updates."
+            },
+            {
+              "title": "Safety First",
+              "description": "Collision avoidance, emergency braking, reinforced safety."
+            },
+            {
+              "title": "Stylish Design",
+              "description": "Modern exterior, aerodynamic profile."
+            }
+          ]
+        },
+        {
+          "value": "item-3",
+          "trigger": "Delivery & Warranty",
+          "content": "Experience a seamless delivery process and comprehensive warranty:",
+          "features": [
+            {
+              "title": "Effortless Delivery",
+              "description": "Smooth and efficient delivery support."
+            },
+            {
+              "title": "Warranty Coverage",
+              "description": "Limited vehicle and battery warranty."
+            },
+            {
+              "title": "Maintenance",
+              "description": "Minimal upkeep, over-the-air updates."
+            },
+            {
+              "title": "Stylish Design",
+              "description": "Modern exterior, aerodynamic profile."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "details": {
+    "about": {
+      "title": "About this car",
+      "features": [
+        {
+          "title": "Diesel Fuel",
+          "icon": "diesel-fuel",
+          "iconWidth": 26,
+          "iconHeight": 26
+        },
+        {
+          "title": "Automatic Transmission",
+          "icon": "automatic-transmission",
+          "iconWidth": 25,
+          "iconHeight": 25
+        },
+        {
+          "title": "11,594 Miles",
+          "icon": "speed",
+          "iconWidth": 28,
+          "iconHeight": 28
+        },
+        {
+          "title": "3.5L Displacement",
+          "icon": "displacement",
+          "iconWidth": 10,
+          "iconHeight": 32
+        }
+      ]
+    },
+    "specifications": {
+      "title": "Specifications",
+      "button": {
+        "showAllSpecifications": "Show all specifications",
+        "showLessSpecifications": "Show less specifications",
+        "showLess": "Show less",
+        "showMore": "Show more"
+      },
+      "categories": {
+        "exteriorOptions": {
+          "title": "Exterior Options",
+          "options": {
+            "Body Style": "Hatchback",
+            "Exterior Colour": "Blue",
+            "Length": "175”",
+            "Wheelbase": "106”",
+            "Width": "69.7”",
+            "Full Width": "N/A",
+            "Clearance": "6”"
+          }
+        },
+        "bevPerformanceOptions": {
+          "title": "BEV Performance Options",
+          "options": {
+            "Horsepower": "107 hp",
+            "MPGe": "102",
+            "Top Speed": "90 mph"
+          }
+        },
+        "interiorOptions": {
+          "title": "Interior",
+          "options": {
+            "Seating": "5 adults",
+            "Interior Color": "N/A",
+            "Head Room Front": "41”",
+            "Head Room Rear": "37”",
+            "Leg Room Front": "42”",
+            "Leg Room Rear": "33”",
+            "Shoulder Room Front": "54",
+            "Shoulder Room Rear": "53",
+            "Hip Room Front": "53",
+            "Hip Room Rear": "52",
+            "Cargo Volume": "15 cu. ft.",
+            "Passenger Volume": "N/A"
+          }
+        },
+        "chargingOptions": {
+          "title": "Charging Options",
+          "options": {
+            "Electric Range": "73 Mi.",
+            "Battery Size": "24 kWh",
+            "Cost to charge (full)": "$2.50",
+            "Cost per mile": "$0.03",
+            "Charge Time (Level 2)": "3.5 hours",
+            "Charge Time (Level 3)": "N/A",
+            "Charge Time (Level 1)": "N/A",
+            "Charge Power": "6.6 kW",
+            "Charge Speed": "22 mph"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "countryCode": "en",
+    "action": "Log In / Sign Up",
+    "findEV": {
+      "title": "Find EV Cars",
+      "triggerContent": "Find EV Cars",
+      "items": [
+        {
+          "href": "#",
+          "title": "Electric Vehicle Models",
+          "description": "Explore the latest electric car models"
+        },
+        {
+          "href": "#",
+          "title": "Charging Stations",
+          "description": "Find charging stations for your electric vehicle"
+        },
+        {
+          "href": "#",
+          "title": "EV Dealerships",
+          "description": "Locate dealerships specializing in electric vehicles"
+        }
+      ]
+    },
+    "evGuides": {
+      "title": "EV Guides",
+      "triggerContent": "EV Guides",
+      "items": [
+        {
+          "href": "#",
+          "title": "Getting Started with EVs",
+          "description": "Essential information for first-time EV owners"
+        },
+        {
+          "href": "#",
+          "title": "Charging Guide",
+          "description": "Learn about charging options and best practices"
+        }
+      ]
+    }
+  }
+}

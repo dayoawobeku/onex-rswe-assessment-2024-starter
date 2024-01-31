@@ -1,0 +1,241 @@
+{
+  "main": {
+    "new": "Nouveau",
+    "car": {
+      "name": "Tesla Model S",
+      "vin": {
+        "label": "NIV",
+        "value": "JN1AZ0CPOBT009448"
+      },
+      "price": "€41,103",
+      "colourTitle": "Couleur",
+      "colors": [
+        {
+          "color": "black",
+          "backgroundColor": "#030303",
+          "displayName": "Noir"
+        },
+        {"color": "red", "backgroundColor": "#D43A55", "displayName": "Rouge"},
+        {"color": "blue", "backgroundColor": "#0036C3", "displayName": "Bleu"},
+        {
+          "color": "white",
+          "backgroundColor": "#ffffff",
+          "displayName": "Argent"
+        }
+      ],
+      "button": {
+        "orderNow": "Commandez maintenant"
+      },
+      "delivery": "Estimée entre le 16 août et le 23 août",
+      "vision": "Tesla croit en l'accélération de la transition mondiale vers une énergie durable avec des voitures électriques.",
+      "viewCollection": "Voir la collection Tesla"
+    },
+    "accordion": {
+      "items": [
+        {
+          "value": "item-1",
+          "trigger": "Description",
+          "content": "La Tesla Model 3 de 2021 offre un mélange transparent de technologie de pointe, de performances et de durabilité. Cette berline électrique est conçue pour redéfinir votre expérience de conduite, offrant un trajet exaltant sans émissions. Explorez les fonctionnalités qui font de la Model 3 un leader sur le marché des véhicules électriques :",
+          "features": [
+            {
+              "title": "Moteur électrique efficace",
+              "description": "Accélération instantanée et conduite silencieuse."
+            },
+            {
+              "title": "Autopilote avancé",
+              "description": "Régulateur de vitesse adaptatif et maintien automatique de voie."
+            },
+            {
+              "title": "Intérieur minimaliste",
+              "description": "Un environnement de conduite élégant et spacieux."
+            },
+            {
+              "title": "Autonomie élevée",
+              "description": "Kilométrage impressionnant sur une seule charge."
+            }
+          ]
+        },
+        {
+          "value": "item-2",
+          "trigger": "Points forts du produit",
+          "content": "Explorez ce qui distingue la Model 3 :",
+          "features": [
+            {
+              "title": "Performances",
+              "description": "Accélération rapide et puissants moteurs électriques."
+            },
+            {
+              "title": "Technologie innovante",
+              "description": "Écran tactile intuitif, mises à jour via réseau sans fil."
+            },
+            {
+              "title": "Sécurité avant tout",
+              "description": "Évitement de collision, freinage d'urgence, sécurité renforcée."
+            },
+            {
+              "title": "Design élégant",
+              "description": "Extérieur moderne, profil aérodynamique."
+            }
+          ]
+        },
+        {
+          "value": "item-3",
+          "trigger": "Livraison et garantie",
+          "content": "Vivez une expérience de livraison fluide et une garantie complète :",
+          "features": [
+            {
+              "title": "Livraison sans effort",
+              "description": "Assistance à la livraison fluide et efficace."
+            },
+            {
+              "title": "Couverture de garantie",
+              "description": "Garantie limitée pour le véhicule et la batterie."
+            },
+            {
+              "title": "Entretien",
+              "description": "Entretien minimal, mises à jour via réseau sans fil."
+            },
+            {
+              "title": "Design élégant",
+              "description": "Extérieur moderne, profil aérodynamique."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "details": {
+    "about": {
+      "title": "À propos de cette voiture",
+      "features": [
+        {
+          "title": "Carburant diesel",
+          "icon": "diesel-fuel",
+          "iconWidth": 26,
+          "iconHeight": 26
+        },
+        {
+          "title": "Transmission automatique",
+          "icon": "automatic-transmission",
+          "iconWidth": 25,
+          "iconHeight": 25
+        },
+        {
+          "title": "11 594 miles",
+          "icon": "speed",
+          "iconWidth": 28,
+          "iconHeight": 28
+        },
+        {
+          "title": "Déplacement de 3,5 L",
+          "icon": "displacement",
+          "iconWidth": 10,
+          "iconHeight": 32
+        }
+      ]
+    },
+    "specifications": {
+      "title": "Spécifications",
+      "button": {
+        "showAllSpecifications": "Afficher toutes les spécifications",
+        "showLessSpecifications": "Afficher moins de spécifications",
+        "showLess": "Afficher moins",
+        "showMore": "Afficher plus"
+      },
+      "categories": {
+        "exteriorOptions": {
+          "title": "Options extérieures",
+          "options": {
+            "Style de carrosserie": "Hayon",
+            "Couleur extérieure": "Bleu",
+            "Longueur": "175 po",
+            "Empattement": "106 po",
+            "Largeur": "69,7 po",
+            "Largeur totale": "N/D",
+            "Dégagement": "6 po"
+          }
+        },
+        "bevPerformanceOptions": {
+          "title": "Options de performance BEV",
+          "options": {
+            "Puissance": "107 ch",
+            "MPGe": "102",
+            "Vitesse maximale": "90 mph"
+          }
+        },
+        "interiorOptions": {
+          "title": "Intérieur",
+          "options": {
+            "Sièges": "5 adultes",
+            "Couleur intérieure": "N/D",
+            "Hauteur de tête avant": "41 po",
+            "Hauteur de tête arrière": "37 po",
+            "Espace pour les jambes à l'avant": "42 po",
+            "Espace pour les jambes à l'arrière": "33 po",
+            "Espace pour les épaules à l'avant": "54 po",
+            "Espace pour les épaules à l'arrière": "53 po",
+            "Espace pour les hanches à l'avant": "53 po",
+            "Espace pour les hanches à l'arrière": "52 po",
+            "Volume de chargement": "15 pi³",
+            "Volume passager": "N/D"
+          }
+        },
+        "chargingOptions": {
+          "title": "Options de charge",
+          "options": {
+            "Autonomie électrique": "73 mi",
+            "Taille de la batterie": "24 kWh",
+            "Coût de la charge (complète)": "2,50 $",
+            "Coût par mile": "0,03 $",
+            "Temps de charge (Niveau 2)": "3,5 heures",
+            "Temps de charge (Niveau 3)": "N/D",
+            "Temps de charge (Niveau 1)": "N/D",
+            "Puissance de charge": "6,6 kW",
+            "Vitesse de charge": "22 mph"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "countryCode": "fr",
+    "action": "Connexion / Inscription",
+    "findEV": {
+      "title": "Trouver des voitures électriques",
+      "triggerContent": "Trouver des voitures électriques",
+      "items": [
+        {
+          "href": "#",
+          "title": "Modèles de véhicules électriques",
+          "description": "Explorez les derniers modèles de voitures électriques"
+        },
+        {
+          "href": "#",
+          "title": "Stations de recharge",
+          "description": "Trouvez des stations de recharge pour votre voiture électrique"
+        },
+        {
+          "href": "#",
+          "title": "Concessionnaires VE",
+          "description": "Localisez les concessionnaires spécialisés dans les véhicules électriques"
+        }
+      ]
+    },
+    "evGuides": {
+      "title": "Guides VE",
+      "triggerContent": "Guides VE",
+      "items": [
+        {
+          "href": "#",
+          "title": "Démarrage avec les VE",
+          "description": "Informations essentielles pour les propriétaires de VE débutants"
+        },
+        {
+          "href": "#",
+          "title": "Guide de recharge",
+          "description": "Apprenez les options de recharge et les meilleures pratiques"
+        }
+      ]
+    }
+  }
+}

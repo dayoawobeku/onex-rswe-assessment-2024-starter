@@ -1,0 +1,237 @@
+{
+  "main": {
+    "new": "Neu",
+    "car": {
+      "name": "Tesla Model S",
+      "vin": {
+        "label": "VIN",
+        "value": "JN1AZ0CPOBT009448"
+      },
+      "price": "€41,103",
+      "colourTitle": "Farbe",
+      "colors": [
+        {
+          "color": "black",
+          "backgroundColor": "#030303",
+          "displayName": "Schwarz"
+        },
+        {"color": "red", "backgroundColor": "#D43A55", "displayName": "Rot"},
+        {"color": "blue", "backgroundColor": "#0036C3", "displayName": "Blau"},
+        {"color": "white", "backgroundColor": "#ffffff", "displayName": "Weiß"}
+      ],
+      "button": {
+        "orderNow": "Jetzt bestellen"
+      },
+      "delivery": "Voraussichtlich zwischen 16. Aug und 23. Aug",
+      "vision": "Tesla setzt sich dafür ein, die weltweite Umstellung auf nachhaltige Energie mit Elektroautos zu beschleunigen.",
+      "viewCollection": "Die Tesla-Kollektion ansehen"
+    },
+    "accordion": {
+      "items": [
+        {
+          "value": "item-1",
+          "trigger": "Beschreibung",
+          "content": "Der Tesla Model 3 von 2021 bietet eine nahtlose Kombination aus modernster Technologie, Leistung und Nachhaltigkeit. Diese elektrische Limousine wurde entwickelt, um Ihre Fahrexpertise neu zu definieren und eine aufregende Reise ohne Emissionen zu ermöglichen. Entdecken Sie die Merkmale, die den Model 3 zum Marktführer im Bereich der Elektrofahrzeuge machen:",
+          "features": [
+            {
+              "title": "Effizienter Elektroantrieb",
+              "description": "Sofortige Beschleunigung und leise Fahrt."
+            },
+            {
+              "title": "Fortgeschrittener Autopilot",
+              "description": "Adaptiver Tempomat und automatisches Spurhalten."
+            },
+            {
+              "title": "Minimalistisches Interieur",
+              "description": "Ein elegantes und geräumiges Fahrerlebnis."
+            },
+            {
+              "title": "Reichweite",
+              "description": "Beeindruckende Kilometerleistung mit einer einzigen Ladung."
+            }
+          ]
+        },
+        {
+          "value": "item-2",
+          "trigger": "Produkthighlights",
+          "content": "Erforschen Sie, was den Model 3 auszeichnet:",
+          "features": [
+            {
+              "title": "Leistung",
+              "description": "Schnelle Beschleunigung und leistungsstarke Elektromotoren."
+            },
+            {
+              "title": "Innovative Technologie",
+              "description": "Intuitives Touchscreen, Over-the-Air-Updates."
+            },
+            {
+              "title": "Sicherheit an erster Stelle",
+              "description": "Kollisionsvermeidung, Notbremsung, verstärkte Sicherheit."
+            },
+            {
+              "title": "Stilvolles Design",
+              "description": "Modernes Äußeres, aerodynamisches Profil."
+            }
+          ]
+        },
+        {
+          "value": "item-3",
+          "trigger": "Lieferung & Garantie",
+          "content": "Erleben Sie einen reibungslosen Lieferprozess und umfassende Garantie:",
+          "features": [
+            {
+              "title": "Mühelose Lieferung",
+              "description": "Reibungslose und effiziente Lieferunterstützung."
+            },
+            {
+              "title": "Garantieabdeckung",
+              "description": "Begrenzte Fahrzeug- und Batteriegarantie."
+            },
+            {
+              "title": "Wartung",
+              "description": "Minimale Instandhaltung, Over-the-Air-Updates."
+            },
+            {
+              "title": "Stilvolles Design",
+              "description": "Modernes Äußeres, aerodynamisches Profil."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "details": {
+    "about": {
+      "title": "Über dieses Auto",
+      "features": [
+        {
+          "title": "Dieselkraftstoff",
+          "icon": "diesel-fuel",
+          "iconWidth": 26,
+          "iconHeight": 26
+        },
+        {
+          "title": "Automatikgetriebe",
+          "icon": "automatic-transmission",
+          "iconWidth": 25,
+          "iconHeight": 25
+        },
+        {
+          "title": "11.594 Meilen",
+          "icon": "speed",
+          "iconWidth": 28,
+          "iconHeight": 28
+        },
+        {
+          "title": "3.5L Hubraum",
+          "icon": "displacement",
+          "iconWidth": 10,
+          "iconHeight": 32
+        }
+      ]
+    },
+    "specifications": {
+      "title": "Technische Daten",
+      "button": {
+        "showAllSpecifications": "Alle Spezifikationen anzeigen",
+        "showLessSpecifications": "Weniger Spezifikationen anzeigen",
+        "showLess": "Weniger anzeigen",
+        "showMore": "Mehr anzeigen"
+      },
+      "categories": {
+        "exteriorOptions": {
+          "title": "Exterieur-Optionen",
+          "options": {
+            "Karosserieform": "Hatchback",
+            "Außenfarbe": "Blau",
+            "Länge": "175”",
+            "Radstand": "106”",
+            "Breite": "69.7”",
+            "Gesamtbreite": "N/A",
+            "Bodenfreiheit": "6”"
+          }
+        },
+        "bevPerformanceOptions": {
+          "title": "BEV-Leistungsoptionen",
+          "options": {
+            "Leistung": "107 PS",
+            "MPGe": "102",
+            "Höchstgeschwindigkeit": "90 mph"
+          }
+        },
+        "interiorOptions": {
+          "title": "Interieur",
+          "options": {
+            "Sitzplätze": "5 Erwachsene",
+            "Innenfarbe": "N/A",
+            "Kopffreiheit vorne": "41”",
+            "Kopffreiheit hinten": "37”",
+            "Beinfreiheit vorne": "42”",
+            "Beinfreiheit hinten": "33”",
+            "Schulterfreiheit vorne": "54",
+            "Schulterfreiheit hinten": "53",
+            "Hüftfreiheit vorne": "53",
+            "Hüftfreiheit hinten": "52",
+            "Laderaumvolumen": "15 cu. ft.",
+            "Fahrgastvolumen": "N/A"
+          }
+        },
+        "chargingOptions": {
+          "title": "Ladeoptionen",
+          "options": {
+            "Elektrische Reichweite": "73 Mi.",
+            "Batteriegröße": "24 kWh",
+            "Kosten für volle Ladung": "$2.50",
+            "Kosten pro Meile": "$0.03",
+            "Ladezeit (Level 2)": "3.5 Stunden",
+            "Ladezeit (Level 3)": "N/A",
+            "Ladezeit (Level 1)": "N/A",
+            "Ladeleistung": "6.6 kW",
+            "Ladegeschwindigkeit": "22 mph"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "countryCode": "de",
+    "action": "Anmelden / Registrieren",
+    "findEV": {
+      "title": "Elektroautos finden",
+      "triggerContent": "Elektroautos finden",
+      "items": [
+        {
+          "href": "#",
+          "title": "Elektrofahrzeugmodelle",
+          "description": "Die neuesten Modelle von Elektroautos entdecken"
+        },
+        {
+          "href": "#",
+          "title": "Ladestationen",
+          "description": "Ladestationen für Ihr Elektrofahrzeug finden"
+        },
+        {
+          "href": "#",
+          "title": "Elektroauto-Händler",
+          "description": "Händler finden, die auf Elektrofahrzeuge spezialisiert sind"
+        }
+      ]
+    },
+    "evGuides": {
+      "title": "EV-Leitfäden",
+      "triggerContent": "EV-Leitfäden",
+      "items": [
+        {
+          "href": "#",
+          "title": "Einstieg in Elektroautos",
+          "description": "Wichtige Informationen für Erstbesitzer von Elektrofahrzeugen"
+        },
+        {
+          "href": "#",
+          "title": "Ladeleitfaden",
+          "description": "Informationen zu Lademöglichkeiten und bewährten Verfahren"
+        }
+      ]
+    }
+  }
+}

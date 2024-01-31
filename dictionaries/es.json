@@ -1,0 +1,241 @@
+{
+  "main": {
+    "new": "Nuevo",
+    "car": {
+      "name": "Tesla Model S",
+      "vin": {
+        "label": "NIV",
+        "value": "JN1AZ0CPOBT009448"
+      },
+      "price": "€41,103",
+      "colourTitle": "Color",
+      "colors": [
+        {
+          "color": "black",
+          "backgroundColor": "#030303",
+          "displayName": "Negro"
+        },
+        {"color": "red", "backgroundColor": "#D43A55", "displayName": "Rojo"},
+        {"color": "blue", "backgroundColor": "#0036C3", "displayName": "Azul"},
+        {
+          "color": "white",
+          "backgroundColor": "#ffffff",
+          "displayName": "Plateado"
+        }
+      ],
+      "button": {
+        "orderNow": "Ordenar ahora"
+      },
+      "delivery": "Estimado entre el 16 de agosto y el 23 de agosto",
+      "vision": "Tesla cree en acelerar la transición del mundo hacia la energía sostenible con automóviles eléctricos.",
+      "viewCollection": "Ver la colección de Tesla"
+    },
+    "accordion": {
+      "items": [
+        {
+          "value": "item-1",
+          "trigger": "Descripción",
+          "content": "El Tesla Model 3 de 2021 ofrece una perfecta combinación de tecnología de vanguardia, rendimiento y sostenibilidad. Este sedán eléctrico está diseñado para redefinir tu experiencia de conducción, proporcionando un viaje emocionante con cero emisiones. Explora las características que hacen de la Model 3 un líder en el mercado de vehículos eléctricos:",
+          "features": [
+            {
+              "title": "Eficiente motor eléctrico",
+              "description": "Aceleración instantánea y un viaje silencioso."
+            },
+            {
+              "title": "Autopiloto avanzado",
+              "description": "Control de crucero adaptativo y mantenimiento automático de carril."
+            },
+            {
+              "title": "Interior minimalista",
+              "description": "Un entorno de conducción elegante y espacioso."
+            },
+            {
+              "title": "Larga autonomía",
+              "description": "Impresionante kilometraje con una sola carga."
+            }
+          ]
+        },
+        {
+          "value": "item-2",
+          "trigger": "Aspectos destacados del producto",
+          "content": "Explora lo que distingue a la Model 3:",
+          "features": [
+            {
+              "title": "Rendimiento",
+              "description": "Aceleración rápida y potentes motores eléctricos."
+            },
+            {
+              "title": "Tecnología innovadora",
+              "description": "Pantalla táctil intuitiva, actualizaciones por aire."
+            },
+            {
+              "title": "Seguridad ante todo",
+              "description": "Evitación de colisiones, frenado de emergencia, seguridad reforzada."
+            },
+            {
+              "title": "Diseño elegante",
+              "description": "Exterior moderno, perfil aerodinámico."
+            }
+          ]
+        },
+        {
+          "value": "item-3",
+          "trigger": "Entrega y garantía",
+          "content": "Experimenta un proceso de entrega sin problemas y una garantía integral:",
+          "features": [
+            {
+              "title": "Entrega sin esfuerzo",
+              "description": "Soporte de entrega suave y eficiente."
+            },
+            {
+              "title": "Cobertura de garantía",
+              "description": "Garantía limitada para el vehículo y la batería."
+            },
+            {
+              "title": "Mantenimiento",
+              "description": "Mantenimiento mínimo, actualizaciones por aire."
+            },
+            {
+              "title": "Diseño elegante",
+              "description": "Exterior moderno, perfil aerodinámico."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "details": {
+    "about": {
+      "title": "Acerca de este coche",
+      "features": [
+        {
+          "title": "Combustible diésel",
+          "icon": "diesel-fuel",
+          "iconWidth": 26,
+          "iconHeight": 26
+        },
+        {
+          "title": "Transmisión automática",
+          "icon": "automatic-transmission",
+          "iconWidth": 25,
+          "iconHeight": 25
+        },
+        {
+          "title": "11,594 millas",
+          "icon": "speed",
+          "iconWidth": 28,
+          "iconHeight": 28
+        },
+        {
+          "title": "Desplazamiento de 3.5 L",
+          "icon": "displacement",
+          "iconWidth": 10,
+          "iconHeight": 32
+        }
+      ]
+    },
+    "specifications": {
+      "title": "Especificaciones",
+      "button": {
+        "showAllSpecifications": "Mostrar todas las especificaciones",
+        "showLessSpecifications": "Mostrar menos especificaciones",
+        "showLess": "Mostrar menos",
+        "showMore": "Mostrar más"
+      },
+      "categories": {
+        "exteriorOptions": {
+          "title": "Opciones exteriores",
+          "options": {
+            "Estilo de carrocería": "Hatchback",
+            "Color exterior": "Azul",
+            "Longitud": "175 pulg.",
+            "Distancia entre ejes": "106 pulg.",
+            "Ancho": "69.7 pulg.",
+            "Ancho total": "N/D",
+            "Despeje": "6 pulg."
+          }
+        },
+        "bevPerformanceOptions": {
+          "title": "Opciones de rendimiento BEV",
+          "options": {
+            "Potencia": "107 hp",
+            "MPGe": "102",
+            "Velocidad máxima": "90 mph"
+          }
+        },
+        "interiorOptions": {
+          "title": "Interior",
+          "options": {
+            "Asientos": "5 adultos",
+            "Color interior": "N/D",
+            "Altura delantera de la cabeza": "41 pulg.",
+            "Altura trasera de la cabeza": "37 pulg.",
+            "Espacio para las piernas delanteras": "42 pulg.",
+            "Espacio para las piernas traseras": "33 pulg.",
+            "Espacio para los hombros delanteros": "54 pulg.",
+            "Espacio para los hombros traseros": "53 pulg.",
+            "Espacio para las caderas delanteras": "53 pulg.",
+            "Espacio para las caderas traseras": "52 pulg.",
+            "Volumen de carga": "15 pies cúbicos",
+            "Volumen del pasajero": "N/D"
+          }
+        },
+        "chargingOptions": {
+          "title": "Opciones de carga",
+          "options": {
+            "Autonomía eléctrica": "73 mi",
+            "Tamaño de la batería": "24 kWh",
+            "Costo de carga (completa)": "$2.50",
+            "Costo por milla": "$0.03",
+            "Tiempo de carga (Nivel 2)": "3.5 horas",
+            "Tiempo de carga (Nivel 3)": "N/D",
+            "Tiempo de carga (Nivel 1)": "N/D",
+            "Potencia de carga": "6.6 kW",
+            "Velocidad de carga": "22 mph"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "countryCode": "es",
+    "action": "Iniciar sesión / Registrarse",
+    "findEV": {
+      "title": "Encontrar coches eléctricos",
+      "triggerContent": "Encontrar coches eléctricos",
+      "items": [
+        {
+          "href": "#",
+          "title": "Modelos de vehículos eléctricos",
+          "description": "Explora los últimos modelos de coches eléctricos"
+        },
+        {
+          "href": "#",
+          "title": "Estaciones de carga",
+          "description": "Encuentra estaciones de carga para tu vehículo eléctrico"
+        },
+        {
+          "href": "#",
+          "title": "Concesionarios VE",
+          "description": "Localiza concesionarios especializados en vehículos eléctricos"
+        }
+      ]
+    },
+    "evGuides": {
+      "title": "Guías VE",
+      "triggerContent": "Guías VE",
+      "items": [
+        {
+          "href": "#",
+          "title": "Empezar con los VE",
+          "description": "Información esencial para propietarios de VE principiantes"
+        },
+        {
+          "href": "#",
+          "title": "Guía de carga",
+          "description": "Aprende sobre opciones de carga y mejores prácticas"
+        }
+      ]
+    }
+  }
+}
