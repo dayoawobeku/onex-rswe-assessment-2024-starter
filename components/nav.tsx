@@ -49,21 +49,19 @@ function Dropdown({navigation}: {navigation: NavigationProps}) {
   };
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <div className="flex items-center cursor-pointer gap-2">
-          <Image
-            src={`/images/${navigation.countryCode}-flag.png`}
-            alt={`${navigation.countryCode} Flag`}
-            width={28}
-            height={18}
-          />
-          <Image
-            src="/images/chevron-down.svg"
-            alt="dropdown"
-            width={24}
-            height={24}
-          />
-        </div>
+      <DropdownMenuTrigger className="flex items-center cursor-pointer gap-2 hover:bg-accent focus:bg-accent focus:outline-none rounded-md transition-colors p-1">
+        <Image
+          src={`/images/${navigation.countryCode}-flag.png`}
+          alt={`${navigation.countryCode} Flag`}
+          width={28}
+          height={18}
+        />
+        <Image
+          src="/images/chevron-down.svg"
+          alt="dropdown"
+          width={24}
+          height={24}
+        />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         {Object.entries(countryLanguages).map(([countryCode, language]) => (
@@ -122,7 +120,7 @@ export default function Nav({navigation}: {navigation: NavigationProps}) {
     <header className="bg-white w-full relative z-20 py-[1.125rem] px-4">
       <div className="max-w-[1223px] mx-auto flex items-end justify-between">
         <div className="flex items-end gap-8">
-          <Link href="/">
+          <Link href="/" className="p-1">
             <Image
               src="/images/logo.svg"
               alt="Logo"
@@ -136,10 +134,11 @@ export default function Nav({navigation}: {navigation: NavigationProps}) {
           </div>
         </div>
         <div className="items-end gap-8 hidden md:flex">
-          <div className="relative -mb-[6px]">
-            <Dropdown navigation={navigation} />
-          </div>
-          <Link href="#" className="text-grey font-semibold">
+          <Dropdown navigation={navigation} />
+          <Link
+            href="#"
+            className="text-grey font-semibold hover:bg-accent focus:bg-accent focus:outline-none rounded-md transition-colors p-1"
+          >
             {navigation.action}
           </Link>
         </div>
@@ -156,9 +155,15 @@ export default function Nav({navigation}: {navigation: NavigationProps}) {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute w-auto left-0 right-0 z-10 items-start gap-6 lg:hidden flex flex-col -mx-4 px-8 py-8 bg-white shadow-lg rounded-b-xl top-[68px] h-dvh">
+          <div className="absolute w-auto left-0 right-0 z-10 items-start gap-8 lg:hidden flex flex-col -mx-4 px-8 py-8 bg-white shadow-lg rounded-b-xl top-[68px] h-dvh">
             <Dropdown navigation={navigation} />
             <NavigationMenuItems navigation={navigation} />
+            <Link
+              href="#"
+              className="text-grey font-semibold hover:bg-accent focus:bg-accent focus:outline-none rounded-md transition-colors"
+            >
+              {navigation.action}
+            </Link>
           </div>
         )}
       </div>

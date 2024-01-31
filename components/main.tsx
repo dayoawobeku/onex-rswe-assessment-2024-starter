@@ -52,7 +52,7 @@ function Color({main, selectedColor, setSelectedColor}: ColorProps) {
           {main.car.colors.map((color, index) => (
             <button
               key={index}
-              className={`w-7 h-7 rounded-full ${selectedColor === color.color ? 'outline outline-1 outline-offset-4 outline-green' : ''}`}
+              className={`w-7 h-7 rounded-full hover:outline-[#E0E0E0] hover:outline-offset-4 outline outline-1 focus:outline-[#E0E0E0] focus:outline-none focus:outline-offset-4 ${selectedColor === color.color ? 'outline-offset-4 outline-green hover:outline-green focus:outline-green' : 'outline-transparent'}`}
               style={{
                 backgroundColor: color.backgroundColor,
                 border: color.color === 'white' ? '1px solid #E0E0E0' : '',
@@ -200,7 +200,7 @@ export default function Main({main}: MainProps) {
           />
         </div>
 
-        <button className="mt-10 lg:mt-16 w-full rounded bg-blue text-green font-semibold flex items-center justify-center h-12 lg:h-15">
+        <button className="mt-10 lg:mt-16 w-full rounded bg-blue text-green font-semibold flex items-center justify-center h-12 lg:h-15 hover:bg-blue/95 focus:bg-blue/95 focus:outline-none transition-colors">
           {main.car.button.orderNow}
         </button>
 
@@ -216,7 +216,7 @@ export default function Main({main}: MainProps) {
             href="https://www.tesla.com/en_gb/models/design#overview"
             target="_blank"
             rel="noreferrer"
-            className="mt-6 block text-blue lg:text-xl underline"
+            className="mt-6 block text-blue lg:text-xl underline hover:text-blue/80 focus:text-blue/80 focus:outline-none transition-colors"
           >
             {main.car.viewCollection}
           </a>

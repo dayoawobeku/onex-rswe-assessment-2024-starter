@@ -54,7 +54,7 @@ const config = {
         },
         grey: 'hsla(var(--grey))',
         'grey-light': 'hsla(var(--grey-light))',
-        blue: 'hsl(var(--blue))',
+        blue: 'hsl(var(--blue), <alpha-value>)',
         green: {
           DEFAULT: 'hsl(var(--green), <alpha-value>)',
           light: 'hsl(var(--green-light))',

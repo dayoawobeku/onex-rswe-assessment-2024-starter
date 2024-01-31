@@ -61,7 +61,7 @@ function ExpandableSection({
 
       {buttonType === 'arrow' ? (
         <button
-          className="mt-6 flex items-center gap-2 text-sm text-blue tracking-0.15 group w-fit"
+          className="mt-6 flex items-center gap-2 text-sm text-blue tracking-0.15 group w-fit hover:text-blue/80 focus:text-blue/80 focus:outline-none transition-colors"
           onClick={handleShowMore}
         >
           <span>
@@ -74,12 +74,12 @@ function ExpandableSection({
             alt="arrow right"
             width={16}
             height={16}
-            className="transform group-hover:translate-x-1 transition-transform"
+            className="transform group-hover:translate-x-1 group-focus:translate-x-1 transition-transform"
           />
         </button>
       ) : buttonType === 'underline' ? (
         <button
-          className="mt-6 sm:mt-8 text-sm text-blue tracking-0.15 underline w-fit"
+          className="mt-6 sm:mt-8 text-sm text-blue tracking-0.15 underline w-fit hover:text-blue/80 focus:text-blue/80 focus:outline-none transition-colors"
           onClick={handleShowMore}
         >
           <span>
@@ -215,7 +215,7 @@ export default function Details({details}: {details: DetailsProps}) {
 
         <div className="mt-12 sm:mt-18 flex items-center justify-center">
           <button
-            className="w-[280px] flex items-center justify-center font-semibold text-blue h-12 lg:h-15 outline outline-1 outline-blue rounded"
+            className="w-[280px] flex items-center justify-center font-semibold text-blue h-12 lg:h-15 outline outline-1 outline-blue rounded hover:bg-blue/80 focus:bg-blue/80 focus:outline-none transition-colors hover:text-white focus:text-white"
             onClick={handleShowAllSpecifications}
           >
             {showMore.interior && showMore.charging
