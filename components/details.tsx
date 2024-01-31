@@ -93,6 +93,57 @@ function ExpandableSection({
   );
 }
 
+interface FeaturesSectionProps {
+  features: FeatureProps[];
+}
+
+function FeaturesSection({features}: FeaturesSectionProps) {
+  return (
+    <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 lg:gap-16 xl:gap-[120px] lg:whitespace-nowrap">
+      {features.map((feature, index) => (
+        <div key={index} className="flex items-center gap-4">
+          {feature.icon && (
+            <Image
+              src={`/images/${feature.icon}.svg`}
+              alt={feature.title}
+              width={feature.iconWidth}
+              height={feature.iconHeight}
+            />
+          )}
+          <p className="lg:text-xl text-grey lg:tracking-0.15">
+            {feature.title}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+interface CategoriesSectionProps {
+  title: string;
+  options: Record<string, string>;
+}
+
+function CategoriesSection({title, options}: CategoriesSectionProps) {
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="font-semibold">{title}</p>
+      <div className="flex items-start gap-10 w-fit">
+        <div className="flex flex-col gap-2">
+          {Object.keys(options).map(key => (
+            <p key={key}>{key}</p>
+          ))}
+        </div>
+        <div className="flex flex-col gap-2">
+          {Object.values(options).map(value => (
+            <p key={value}>{value}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Details({details}: {details: DetailsProps}) {
   const [showMore, setShowMore] = useState({
     interior: false,
@@ -112,23 +163,7 @@ export default function Details({details}: {details: DetailsProps}) {
         {details.about.title}
       </h1>
 
-      <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 lg:gap-16 xl:gap-[120px] lg:whitespace-nowrap">
-        {details.about.features.map((feature, index) => (
-          <div key={index} className="flex items-center gap-4">
-            {feature.icon && (
-              <Image
-                src={`/images/${feature.icon}.svg`}
-                alt={feature.title}
-                width={feature.iconWidth}
-                height={feature.iconHeight}
-              />
-            )}
-            <p className="lg:text-xl text-grey lg:tracking-0.15">
-              {feature.title}
-            </p>
-          </div>
-        ))}
-      </div>
+      <FeaturesSection features={details.about.features} />
 
       <div className="mt-12 lg:mt-28">
         <h1 className="text-2xl lg:text-3.5xl text-grey font-semibold tracking-0.25">
@@ -136,27 +171,10 @@ export default function Details({details}: {details: DetailsProps}) {
         </h1>
 
         <div className="mt-6 sm:mt-10 flex items-start flex-col sm:flex-row gap-6 justify-between lg:justify-start lg:gap-16 xl:gap-[106px] w-full lg:text-xl text-grey tracking-0.15">
-          <div className="flex flex-col gap-4">
-            <p className="font-semibold">
-              {details.specifications.categories.exteriorOptions.title}
-            </p>
-            <div className="flex items-start gap-10 w-fit">
-              <div className="flex flex-col gap-2">
-                {Object.keys(
-                  details.specifications.categories.exteriorOptions.options,
-                ).map(key => (
-                  <p key={key}>{key}</p>
-                ))}
-              </div>
-              <div className="flex flex-col gap-2">
-                {Object.values(
-                  details.specifications.categories.exteriorOptions.options,
-                ).map(value => (
-                  <p key={value}>{value}</p>
-                ))}
-              </div>
-            </div>
-          </div>
+          <CategoriesSection
+            title={details.specifications.categories.exteriorOptions.title}
+            options={details.specifications.categories.exteriorOptions.options}
+          />
 
           <ExpandableSection
             title={details.specifications.categories.interiorOptions.title}
@@ -169,48 +187,29 @@ export default function Details({details}: {details: DetailsProps}) {
             details={details}
           />
 
-          <div className="flex flex-col">
-            <div className="flex flex-col gap-6 sm:gap-14">
-              <div className="flex flex-col gap-4">
-                <p className="font-semibold">
-                  {
-                    details.specifications.categories.bevPerformanceOptions
-                      .title
-                  }
-                </p>
-                <div className="flex items-start gap-10 w-fit">
-                  <div className="flex flex-col gap-2">
-                    {Object.keys(
-                      details.specifications.categories.bevPerformanceOptions
-                        .options,
-                    ).map(key => (
-                      <p key={key}>{key}</p>
-                    ))}
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    {Object.values(
-                      details.specifications.categories.bevPerformanceOptions
-                        .options,
-                    ).map(value => (
-                      <p key={value}>{value}</p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <ExpandableSection
-                title={details.specifications.categories.chargingOptions.title}
-                options={
-                  details.specifications.categories.chargingOptions.options
-                }
-                numberOfInitiallyVisibleOptions={3}
-                buttonType="underline"
-                showMore={showMore.charging}
-                setShowMore={value =>
-                  setShowMore(prev => ({...prev, charging: value}))
-                }
-                details={details}
-              />
-            </div>
+          <div className="flex flex-col gap-6 sm:gap-14">
+            <CategoriesSection
+              title={
+                details.specifications.categories.bevPerformanceOptions.title
+              }
+              options={
+                details.specifications.categories.bevPerformanceOptions.options
+              }
+            />
+
+            <ExpandableSection
+              title={details.specifications.categories.chargingOptions.title}
+              options={
+                details.specifications.categories.chargingOptions.options
+              }
+              numberOfInitiallyVisibleOptions={3}
+              buttonType="underline"
+              showMore={showMore.charging}
+              setShowMore={value =>
+                setShowMore(prev => ({...prev, charging: value}))
+              }
+              details={details}
+            />
           </div>
         </div>
 
