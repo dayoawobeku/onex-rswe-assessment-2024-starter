@@ -15,7 +15,7 @@ const graphik = localFont({
       style: 'normal',
     },
     {
-      path: './GraphikSemiBold.woff2',
+      path: './GraphikSemibold.woff2',
       weight: '600',
       style: 'normal',
     },

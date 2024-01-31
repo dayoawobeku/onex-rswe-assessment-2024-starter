@@ -79,7 +79,7 @@ function ExpandableSection({
         </button>
       ) : buttonType === 'underline' ? (
         <button
-          className="mt-8 text-sm text-blue tracking-0.15 underline w-fit"
+          className="mt-6 sm:mt-8 text-sm text-blue tracking-0.15 underline w-fit"
           onClick={handleShowMore}
         >
           <span>
@@ -107,12 +107,12 @@ export default function Details({details}: {details: DetailsProps}) {
   };
 
   return (
-    <section className="py-14 pl-[5.7%] pr-[9.6%]">
-      <h1 className="text-3.5xl text-grey font-semibold tracking-0.25">
+    <section className="py-14 px-4 xl:pl-[5.7%] xl:pr-[9.6%]">
+      <h1 className="text-2xl lg:text-3.5xl text-grey font-semibold tracking-0.25">
         {details.about.title}
       </h1>
 
-      <div className="mt-10 flex items-center gap-[120px]">
+      <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 lg:gap-16 xl:gap-[120px] lg:whitespace-nowrap">
         {details.about.features.map((feature, index) => (
           <div key={index} className="flex items-center gap-4">
             {feature.icon && (
@@ -123,19 +123,19 @@ export default function Details({details}: {details: DetailsProps}) {
                 height={feature.iconHeight}
               />
             )}
-            <p className="text-xl text-grey tracking-0.15 leading-8">
+            <p className="lg:text-xl text-grey lg:tracking-0.15">
               {feature.title}
             </p>
           </div>
         ))}
       </div>
 
-      <div className="mt-28">
-        <h1 className="text-3.5xl text-grey font-semibold tracking-0.25">
+      <div className="mt-12 lg:mt-28">
+        <h1 className="text-2xl lg:text-3.5xl text-grey font-semibold tracking-0.25">
           {details.specifications.title}
         </h1>
 
-        <div className="mt-10 flex items-start gap-[106px] w-full text-xl text-grey tracking-0.15">
+        <div className="mt-6 sm:mt-10 flex items-start flex-col sm:flex-row gap-6 justify-between lg:justify-start lg:gap-16 xl:gap-[106px] w-full lg:text-xl text-grey tracking-0.15">
           <div className="flex flex-col gap-4">
             <p className="font-semibold">
               {details.specifications.categories.exteriorOptions.title}
@@ -170,7 +170,7 @@ export default function Details({details}: {details: DetailsProps}) {
           />
 
           <div className="flex flex-col">
-            <div className="flex flex-col gap-14">
+            <div className="flex flex-col gap-6 sm:gap-14">
               <div className="flex flex-col gap-4">
                 <p className="font-semibold">
                   {
@@ -214,9 +214,9 @@ export default function Details({details}: {details: DetailsProps}) {
           </div>
         </div>
 
-        <div className="mt-18 flex items-center justify-center">
+        <div className="mt-12 sm:mt-18 flex items-center justify-center">
           <button
-            className="w-[280px] flex items-center justify-center font-semibold text-blue h-15 outline outline-1 outline-blue rounded"
+            className="w-[280px] flex items-center justify-center font-semibold text-blue h-12 lg:h-15 outline outline-1 outline-blue rounded"
             onClick={handleShowAllSpecifications}
           >
             {showMore.interior && showMore.charging
