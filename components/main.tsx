@@ -52,7 +52,7 @@ function Color({main, selectedColor, setSelectedColor}: ColorProps) {
           {main.car.colors.map((color, index) => (
             <button
               key={index}
-              className={`w-7 h-7 rounded-full hover:outline-[#E0E0E0] hover:outline-offset-4 outline outline-1 focus:outline-[#E0E0E0] focus:outline-none focus:outline-offset-4 ${selectedColor === color.color ? 'outline-offset-4 outline-green hover:outline-green focus:outline-green' : 'outline-transparent'}`}
+              className={`w-7 h-7 rounded-full outline outline-1 hover:outline-border hover:outline-offset-4 focus:outline-offset-4 focus:outline-green focus:outline-none ${selectedColor === color.color ? 'outline-offset-4 outline-green hover:outline-green focus:outline-green' : 'outline-transparent'}`}
               style={{
                 backgroundColor: color.backgroundColor,
                 border: color.color === 'white' ? '1px solid #E0E0E0' : '',
